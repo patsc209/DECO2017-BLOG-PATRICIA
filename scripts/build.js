@@ -78,23 +78,24 @@ const postListItemTemplate = fs.readFileSync(
   "utf8",
 );
 
+const icons = ["cat-icon.png", "dog-icon.png", "sheep-icon.png", "star-icon.png"];
+
 const postsHtml = posts
-  .map((p) => {
-    // Generate tags HTML
+  .map((p, i) => {
     const tagsHtml =
       p.tags?.map((tag) => `<span class="tag">${tag}</span>`).join("") ?? "";
 
-    // Use the template for each <li>
     return applyTemplate(postListItemTemplate, {
       slug: p.slug,
       title: p.title,
       author: p.author,
-      date: format(new Date(p.date), "yyyy-MM-dd"), // Format the date as needed
+      date: format(new Date(p.date), "yyyy-MM-dd"),
       summary: p.summary,
-      tags: tagsHtml, // Replace {{tags}} with the generated tags HTML
+      tags: tagsHtml,
+      icon: icons[i % icons.length],
     });
   })
-  .join(""); // Combine all <li> items into a single string
+  .join("");
 
 const index = applyTemplate(template, {
   postList: postsHtml,

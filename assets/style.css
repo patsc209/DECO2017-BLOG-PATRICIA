@@ -10,8 +10,23 @@
   --dark-accent: #818cf8;
 }
 
+.site-header {
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  background-color: #F4F1EA ;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+}
+
 body {
-  font-family: system-ui, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   background: light-dark(var(--light-bg), var(--dark-bg));
   color: light-dark(var(--light-text), var(--dark-text));
   margin: 0;
@@ -60,4 +75,24 @@ ul.tags-list {
 
 ul.post-list{
     list-style: none;
+    padding: 0;
+}
+
+li.post-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-icon {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+}
+
+.post-content {
+    flex: 1;
 }
