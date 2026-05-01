@@ -105,6 +105,6 @@ fs.writeFileSync(`${DIST_DIR}/index.html`, index);
 
 // Simple Node.js built-in method:
 fs.cpSync("assets", `${DIST_DIR}/assets`, { recursive: true });
-
+fs.cpSync("templates/photos", `${DIST_DIR}/photos`, { recursive: true });
 
 console.log(chalk.green("✔ Build complete"));
