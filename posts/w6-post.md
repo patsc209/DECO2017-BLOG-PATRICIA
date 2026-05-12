@@ -1,6 +1,7 @@
 ---
 title: Interpreting the Brief + My Ideas (Week 6)
 date: 2026-04-03
+image: thumb-w6.png
 author: Patricia
 summary: This post is the beggining of planning for the project, analyzing the brief and identifying possible ideas.
 tags:
