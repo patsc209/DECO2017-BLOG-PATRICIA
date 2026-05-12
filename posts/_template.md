@@ -1,6 +1,7 @@
 ---
 title: Post Title
 date: 2026-02-14
+# Optional card image (place file in assets/): image: thumb-example.png
 author: Your Name
 summary: Short description
 tags:

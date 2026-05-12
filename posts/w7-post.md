@@ -1,6 +1,7 @@
 ---
 title: Still Finding a Direction (Week 7)
 date: 2026-04-17
+image: thumb-w7.png
 author: Patricia
 summary: Finding a concrete idea to settle on is a lot harder than one thinks. This post talks about that challenge and how we intend to overcome it.
 tags:

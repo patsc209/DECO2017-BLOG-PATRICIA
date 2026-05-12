@@ -78,21 +78,18 @@ const postListItemTemplate = fs.readFileSync(
   "utf8",
 );
 
-const icons = ["cat-icon.png", "dog-icon.png", "sheep-icon.png", "star-icon.png"];
-
 const postsHtml = posts
-  .map((p, i) => {
-    const tagsHtml =
-      p.tags?.map((tag) => `<span class="tag">${tag}</span>`).join("") ?? "";
+  .map((p) => {
+    const thumbImg =
+      typeof p.image === "string" && p.image.length > 0
+        ? `<img class="post-card-thumb-img" src="assets/${p.image}" alt="" loading="lazy" decoding="async">`
+        : "";
 
     return applyTemplate(postListItemTemplate, {
       slug: p.slug,
       title: p.title,
-      author: p.author,
       date: format(new Date(p.date), "yyyy-MM-dd"),
-      summary: p.summary,
-      tags: tagsHtml,
-      icon: icons[i % icons.length],
+      thumbImg,
     });
   })
   .join("");
@@ -105,6 +102,9 @@ fs.writeFileSync(`${DIST_DIR}/index.html`, index);
 
 // Simple Node.js built-in method:
 fs.cpSync("assets", `${DIST_DIR}/assets`, { recursive: true });
-fs.cpSync("templates/photos", `${DIST_DIR}/photos`, { recursive: true });
+const photosDir = "templates/photos";
+if (fs.existsSync(photosDir)) {
+  fs.cpSync(photosDir, `${DIST_DIR}/photos`, { recursive: true });
+}
 
 console.log(chalk.green("✔ Build complete"));
