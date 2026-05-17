@@ -1,6 +1,7 @@
 ---
 title: Building the First Versions (Week 9)
 date: 2026-05-02
+image: thumb-w9.png
 author: Patricia
 summary: Started to build the actual project, seeing it come to life.
 tags:

@@ -1,6 +1,7 @@
 ---
 title: Refining What We Had (Week 10)
 date: 2026-05-08
+image: thumb-w10.png
 author: Patricia
 summary: Iterating, iterating, and iterating some more. 
 tags:

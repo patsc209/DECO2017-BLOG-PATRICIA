@@ -1,6 +1,7 @@
 ---
 title:  Testing, the API, and What We Actually Learned (Week 11)
 date: 2026-05-15
+image: thumb-w11.png
 author: Patricia
 summary: Testing with the team, implemented the API and our overall learnings since this project started. 
 tags:
