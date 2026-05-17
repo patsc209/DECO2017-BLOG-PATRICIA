@@ -80,21 +80,19 @@ const postListItemTemplate = fs.readFileSync(
 
 const postsHtml = posts
   .map((p) => {
-    // Generate tags HTML
-    const tagsHtml =
-      p.tags?.map((tag) => `<span class="tag">${tag}</span>`).join("") ?? "";
+    const thumbImg =
+      typeof p.image === "string" && p.image.length > 0
+        ? `<img class="post-card-thumb-img" src="assets/${p.image}" alt="" loading="lazy" decoding="async">`
+        : "";
 
-    // Use the template for each <li>
     return applyTemplate(postListItemTemplate, {
       slug: p.slug,
       title: p.title,
-      author: p.author,
-      date: format(new Date(p.date), "yyyy-MM-dd"), // Format the date as needed
-      summary: p.summary,
-      tags: tagsHtml, // Replace {{tags}} with the generated tags HTML
+      date: format(new Date(p.date), "yyyy-MM-dd"),
+      thumbImg,
     });
   })
-  .join(""); // Combine all <li> items into a single string
+  .join("");
 
 const index = applyTemplate(template, {
   postList: postsHtml,
@@ -104,6 +102,9 @@ fs.writeFileSync(`${DIST_DIR}/index.html`, index);
 
 // Simple Node.js built-in method:
 fs.cpSync("assets", `${DIST_DIR}/assets`, { recursive: true });
-
+const photosDir = "templates/photos";
+if (fs.existsSync(photosDir)) {
+  fs.cpSync(photosDir, `${DIST_DIR}/photos`, { recursive: true });
+}
 
 console.log(chalk.green("✔ Build complete"));

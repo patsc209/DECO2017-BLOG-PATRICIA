@@ -1,63 +1,306 @@
-:root {
-  --max-width: 720px;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
-  color-scheme: light dark;
-  --light-bg: #eeeeee;
-  --light-text: #111111;
-  --light-accent: #4f46e5;
-  --dark-bg: #111111;
-  --dark-text: #eeeeee;
-  --dark-accent: #818cf8;
+:root {
+  --cream: #faf8f5;
+  --cream-deep: #f0ebe3;
+  --paper: #ffffff;
+  --ink: #2c2a26;
+  --ink-muted: #5c5852;
+  --border: #e5e0d8;
+  --max-content: 1100px;
+  --radius-card: 10px;
+  --radius-avatar: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui, sans-serif;
-  background: light-dark(var(--light-bg), var(--dark-bg));
-  color: light-dark(var(--light-text), var(--dark-text));
   margin: 0;
-  line-height: 1.6;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-optical-sizing: auto;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.55;
 }
 
-main {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 2rem;
+/* ——— Home: hero header ——— */
+.page-hero {
+  background: var(--paper);
+}
+
+.header-banner-img {
+  width: 100%;
+  display: block;
+  height: clamp(140px, 22vw, 220px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-inner {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+  position: relative;
+}
+
+.header-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--radius-avatar);
+  background: var(--cream-deep);
+  border: 3px solid var(--paper);
+  box-shadow: 0 2px 12px rgba(44, 42, 38, 0.08);
+  margin-top: -44px;
+  margin-bottom: 1rem;
+  display: block;
+  object-fit: cover;
+  object-position: 28% 22%;
+}
+
+.hero-titles {
+  padding-top: 0.25rem;
+}
+
+.site-title {
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  text-transform: lowercase;
+  color: var(--ink);
+}
+
+.site-subtitle-bar {
+  margin: 0;
+  padding: 0.65rem 1rem;
+  background: var(--cream-deep);
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* ——— Home: main + grid ——— */
+.home-main {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-transform: lowercase;
+}
+
+.section-label-icon {
+  display: flex;
+  color: var(--ink-muted);
+  opacity: 0.85;
+}
+
+.post-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.post-card {
+  margin: 0;
+}
+
+.post-card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(44, 42, 38, 0.06);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.post-card-link:hover {
+  border-color: #d8d2c8;
+  box-shadow: 0 8px 24px rgba(44, 42, 38, 0.1);
+  transform: translateY(-2px);
+}
+
+.post-card-thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--cream-deep);
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.02) 100%
+  );
+}
+
+.post-card-thumb:has(.post-card-thumb-img) {
+  background-image: none;
+}
+
+.post-card-thumb-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.post-card-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  padding: 0.75rem 0.85rem 0.9rem;
+  border-top: 1px solid var(--border);
+  background: var(--paper);
+}
+
+.post-card-doc {
+  flex-shrink: 0;
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+
+.post-card-title {
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+/* ——— Article (post) pages ——— */
+body.page-post main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.page-post .back-home {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+.page-post .back-home:hover {
+  color: var(--ink);
+}
+
+.page-post h1 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+}
+
+.page-post article {
+  margin-top: 1.25rem;
+}
+
+.page-post article :is(p, li) {
+  font-size: 1rem;
+}
+
+.page-post article pre {
+  overflow-x: auto;
+  border-radius: var(--radius-card);
 }
 
 a {
-  color: light-dark(var(--light-accent), var(--dark-accent));
+  color: #4a5a6e;
+}
+
+a:hover {
+  color: var(--ink);
 }
 
 span.tag {
-  border: light-dark(var(--light-accent), var(--dark-accent)) 1px solid;
-  border-radius: 0.5rem;
-  padding: 0 0.2rem;
-  margin: 0 0.2rem;
-  font-size: 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  margin: 0 0.35rem 0.35rem 0;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  background: var(--paper);
 }
 
 span.date::before {
-    content: "📅 "; /* Calendar emoji before the date */
+  content: "";
 }
 
 span.author::before {
-    content: "✍️ "; /* Pen emoji before the author */
+  content: "";
 }
 
-.date, .author {
-    font-size: 0.8rem;
-    margin: 0;
+.date,
+.author {
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0;
+  color: var(--ink-muted);
 }
 
 p.summary {
-    margin: 0;
-    font-size: 0.9rem
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 ul.tags-list {
-    padding: 0;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-ul.post-list{
-    list-style: none;
+/* Legacy list layout (if reused elsewhere) */
+ul.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+li.post-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-icon {
+  width: 3em;
+  height: 3em;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.1em;
+}
+
+.post-content {
+  flex: 1;
 }
