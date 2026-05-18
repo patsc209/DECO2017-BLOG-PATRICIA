@@ -26,7 +26,7 @@ It also made the navigation feel more important. Moving between the feed, the ma
 
 <b>Scope check</b>
 
-We also did a quiet scope check this week. The festive collections feature like curated recipe sets around Hari Raya, Tết, Songkran had been on the plan since week 8, but with the time remaining and the complexity of the core features, we made the call to simplify it. We basically removed it completely because it's just not realistic to have at this point. It's the kind of scope trade-off that's easy to feel bad about but is usually the right call.
+We also did a quiet scope check this week. The festive collections feature like curated recipe sets around Hari Raya, Tết, Songkran had been on the plan since week 8, but with the time remaining and the complexity of the core features, we made the call to simplify it. We basically removed it completely because it's just not realistic to have at this point because we need to prioritize with making the regular recipes working. It's the kind of scope trade-off that's easy to feel bad about but is usually the right call.
 
 Well that's it for today, see you next time.
 

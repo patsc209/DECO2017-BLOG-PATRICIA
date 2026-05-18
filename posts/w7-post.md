@@ -9,7 +9,7 @@ tags:
   - ideation
   - 
 ---
-Hello fellow reader! It is now Week 7, and although I couldn't be in class today to discuss with my teammates, we did communicate to eachother via the magic of modern technology (social media). We all shared ideas, and I got to admit my group is pretty creative. Although this was supposed to be the week we locked in our concept, in all honesty we didn't.
+Hello fellow reader! It is now Week 7, and although I couldn't be in class today to discuss with my teammates, we did communicate to each other via the magic of modern technology (social media). We all shared ideas, and I got to admit my group is pretty creative. Although this was supposed to be the week we locked in our concept, in all honesty we didn't.
 
 Looking at it now, the bigger issue wasn't the medium though. It was that we were all still fairly new to each other (or at least I was), and nobody wanted to be the person who shot down someone else's idea. The awkward truth is that all the ideas on the table were genuinely good, different communities, different angles, all of them workable within the brief. That actually made it harder to decide, not easier. When everything is a reasonable option, the conversation defaults to "yeah that could work" rather than "let's go with that one."
 
@@ -21,6 +21,6 @@ A freeform post is easier to build and easier for users to write. But if ingredi
 
 This tension between expressive posts and structured data is something we'll need to resolve once the concept is finalised. For now it's just something to keep in mind. Whatever food niche we land on, the answer to "how structured should a recipe be?" will significantly shape both the database schema and the submission form design.
 
-So where did we leave it? Well, I'm not sure how it will go next week. I personally think it's hard to pick because there are so many concept possibilities, so many things that we could potentially do! However, we all agreed we would definetly finalize a concept ASAP. Because we had already had a direction but not a decision. Food community, Sydney-based, culturally specific in some way. The concept would get finalised the following week when we could actually sit down together and work it out properly. 
+So where did we leave it? Well, I'm not sure how it will go next week. I personally think it's hard to pick because there are so many concept possibilities, so many things that we could potentially do! However, we all agreed we would definitely finalize a concept ASAP. Because we had already had a direction but not a decision. Food community, Sydney-based, culturally specific in some way. The concept would get finalised the following week when we could actually sit down together and work it out properly. 
 
 That's a wrap for this post, see you all in the next one!
