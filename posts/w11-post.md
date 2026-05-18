@@ -30,3 +30,20 @@ The think-aloud format was worth it. Watching someone narrate their confusion ou
 <b>Conclusions and wrapping up</b>
 
 Since this is the final post for my blog, I feel that theres still quite a way to go for our project. However, I will admit it is really cool to be able to see our project come to life. I know the final A2 Assigment doesn't have to be perfect, but I still want to continue to try my best and challenge myself. 
+
+<div class="ig-carousel" tabindex="0" role="region" aria-label="Week 11 project screenshots">
+  <div class="ig-carousel-viewport">
+    <div class="ig-carousel-track">
+      <figure class="ig-carousel-slide"><img src="assets/w11-feed.png" alt="Feed with Unsplash recipe photos"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/w11-map.png" alt="Ingredient map with community pins"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/w11-signin.png" alt="Sign-in page"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/w11-profile.png" alt="Profile page"></figure>
+    </div>
+  </div>
+  <button type="button" class="ig-carousel-btn ig-carousel-prev" aria-label="Previous screenshot">‹</button>
+  <button type="button" class="ig-carousel-btn ig-carousel-next" aria-label="Next screenshot">›</button>
+  <div class="ig-carousel-footer">
+    <span class="ig-carousel-counter" aria-live="polite">1 / 4</span>
+    <div class="ig-carousel-dots"></div>
+  </div>
+</div>

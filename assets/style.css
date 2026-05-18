@@ -304,3 +304,121 @@ li.post-item {
 .post-content {
   flex: 1;
 }
+
+/* Instagram-style post carousel */
+.ig-carousel {
+  position: relative;
+  max-width: 28rem;
+  margin: 2rem auto 0;
+  padding: 0 2.5rem;
+  outline: none;
+}
+
+.ig-carousel-viewport {
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border);
+  background: var(--paper);
+  box-shadow: 0 4px 24px rgba(44, 42, 38, 0.08);
+}
+
+.ig-carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.ig-carousel-slide {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+.ig-carousel-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(70vh, 32rem);
+  object-fit: contain;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.ig-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44, 42, 38, 0.1);
+}
+
+.ig-carousel-btn:hover {
+  background: var(--cream-deep);
+}
+
+.ig-carousel-prev {
+  left: 0;
+}
+
+.ig-carousel-next {
+  right: 0;
+}
+
+.ig-carousel-caption {
+  margin: 0.75rem 0 0;
+  padding: 0 0.25rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  text-align: center;
+  min-height: 1.25rem;
+}
+
+.ig-carousel-caption[hidden] {
+  display: none;
+}
+
+.ig-carousel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.ig-carousel-counter {
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  min-width: 2.5rem;
+}
+
+.ig-carousel-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.ig-carousel-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--border);
+  cursor: pointer;
+}
+
+.ig-carousel-dot.is-active {
+  background: var(--ink-muted);
+  transform: scale(1.2);
+}

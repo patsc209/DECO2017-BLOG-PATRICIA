@@ -29,3 +29,22 @@ It also made the navigation feel more important. Moving between the feed, the ma
 We also did a quiet scope check this week. The festive collections feature like curated recipe sets around Hari Raya, Tết, Songkran had been on the plan since week 8, but with the time remaining and the complexity of the core features, we made the call to simplify it. We basically removed it completely because it's just not realistic to have at this point. It's the kind of scope trade-off that's easy to feel bad about but is usually the right call.
 
 Well that's it for today, see you next time.
+
+<div class="ig-carousel" tabindex="0" role="region" aria-label="Week 10 project screenshots">
+  <div class="ig-carousel-viewport">
+    <div class="ig-carousel-track">
+      <figure class="ig-carousel-slide"><img src="assets/w10-branding.png" alt="SEAblings colour palette, UI preview, and branding"></figure>
+      <figure class="ig-carousel-slide">
+        <img src="assets/w10-github-projects.png" alt="GitHub Projects board for SEAblings">
+        <figcaption>learned how to use git projects and its so much easier</figcaption>
+      </figure>
+    </div>
+  </div>
+  <p class="ig-carousel-caption" hidden aria-live="polite"></p>
+  <button type="button" class="ig-carousel-btn ig-carousel-prev" aria-label="Previous screenshot">‹</button>
+  <button type="button" class="ig-carousel-btn ig-carousel-next" aria-label="Next screenshot">›</button>
+  <div class="ig-carousel-footer">
+    <span class="ig-carousel-counter" aria-live="polite">1 / 2</span>
+    <div class="ig-carousel-dots"></div>
+  </div>
+</div>

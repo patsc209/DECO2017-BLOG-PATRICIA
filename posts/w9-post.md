@@ -27,3 +27,24 @@ A few assumptions from the planning phase didn't survive contact with the actual
 The dummy data also made the feed look more alive than expected, which gave us confidence that the card grid layout from the wireframes was the right call. Three columns on desktop, each card showing a thumbnail, recipe name, and cuisine tag, works well once there's actual content filling it. Got to add some colour and character next though, looks quite depressing being B&W.
 
 That's it for this week, see you in the next one.
+
+<div class="ig-carousel" tabindex="0" role="region" aria-label="Week 9 project screenshots">
+  <div class="ig-carousel-viewport">
+    <div class="ig-carousel-track">
+      <figure class="ig-carousel-slide"><img src="assets/seabling-erd-sheets.png" alt="Recipe and ingredient table planning in Google Sheets"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-erd.png" alt="Entity-relationship diagram for recipes, ingredients, stores, and pins"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-wireframes-anon.png" alt="Annotated wireframes (Anon)"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-wireframes-natasha.png" alt="Annotated wireframes (Natasha)"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-feed.png" alt="First working feed with dummy recipes"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-signin.png" alt="Sign-in with test profiles"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-map.png" alt="Ingredient map with community pins across Sydney"></figure>
+      <figure class="ig-carousel-slide"><img src="assets/seabling-post-recipe.png" alt="Post a recipe form"></figure>
+    </div>
+  </div>
+  <button type="button" class="ig-carousel-btn ig-carousel-prev" aria-label="Previous screenshot">‹</button>
+  <button type="button" class="ig-carousel-btn ig-carousel-next" aria-label="Next screenshot">›</button>
+  <div class="ig-carousel-footer">
+    <span class="ig-carousel-counter" aria-live="polite">1 / 8</span>
+    <div class="ig-carousel-dots"></div>
+  </div>
+</div>
