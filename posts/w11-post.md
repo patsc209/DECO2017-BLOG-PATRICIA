@@ -27,9 +27,19 @@ The main thing that came out of it: some ingredients weren't resolving correctly
 
 The think-aloud format was worth it. Watching someone narrate their confusion out loud tells you more in ten minutes than reading through code for an hour. For a feature like the ingredient map , which only works if people actually trust and use it, knowing that the core interaction held up under real use, with only fixable issues surfacing, felt like a reasonable place to land.
 
+<b>Tracing back to the brief</b>
+
+Our hub still aims to meet BlaBla Corp’s core expectations: authenticated users can browse and contribute content, the UI is intended to work on mobile and desktop, and we designed with accessibility in mind (though we have not completed a full WCAG audit). Features we prioritised were the recipe feed and ingredient map because they match our community’s main jobs-to-be-done. Festive collections and a separate questions board were deferred to keep the prototype reliable. Cookie/consent and formal performance benchmarking remain out of scope for this prototype but would be required for a production release.
+
+<b>How we would evaluate next</b>
+
+We would run task-based usability tests on the map and posting flow, complete an accessibility check (keyboard navigation, contrast, screen reader labels on pins and forms), and measure whether map filtering stays responsive as pin count grows. Think-aloud testing already showed that schema/data consistency affects trust in the map more than visual polish.
+
 <b>Conclusions and wrapping up</b>
 
-Since this is the final post for my blog, I feel that theres still quite a way to go for our project. However, I will admit it is really cool to be able to see our project come to life. I know the final A2 Assigment doesn't have to be perfect, but I still want to continue to try my best and challenge myself. 
+Since this is the final post for my blog, I feel that there's still quite a way to go for our project. However, I will admit it is really cool to be able to see our project come to life. I know the final A2 Assignment doesn't have to be perfect, but I still want to continue to try my best and challenge myself. 
+
+
 
 <div class="ig-carousel" tabindex="0" role="region" aria-label="Week 11 project screenshots">
   <div class="ig-carousel-viewport">

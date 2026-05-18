@@ -15,12 +15,12 @@ Thinking back to functional essentials, any BlaBla Corp hub needs to let logged-
 
 I had a few ideas for this project, but here are my 2 personal ones that I think are the strongest:
 
-Brew Hub:
+<b>Brew Hub:</b>
  community for coffee, matcha, and drink enthusiasts. Members log their daily brews with details like dose, grind size, water temperature, and ratio, then share tasting notes and rate each other's recipes. There'd be a live feed of recent brews. 
  
  What drew me to this was the recipe/log hybrid problem it's personal data (your specific pour-over this morning) that also becomes social content. The data model has to serve both a private log and a public feed simultaneously, which felt like an interesting design challenge.
 
-Mend Hub:
+<b>Mend Hub:</b>
  A space for people who repair and repurpose clothing rather than throwing it away. Members post before and after photos of their pieces, share techniques, and document projects over time. I was drawn to the inherently visual nature of this community and its sustainability angle. The tricky part: a single "mend" could span multiple posts over weeks, so the data model needs to handle project progression, not just standalone entries.
 
 
