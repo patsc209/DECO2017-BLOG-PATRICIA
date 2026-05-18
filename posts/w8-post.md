@@ -19,9 +19,13 @@ What I think made this idea land so quickly is that we weren't designing for a h
 
 The two core features are a recipe feed and an ingredient finder. The recipe feed is the more familiar of the two. Members will post and browse dessert recipes tagged by region (Malaysian, Vietnamese, Thai, and more), difficulty, and equipment needed. Festive collections around occasions like Hari Raya, Tết, and Songkran give the community a reason to return at specific times of year! 
 
+![Early wireframes for the home feed and recipe detail screens](assets/seabling-wireframe-feed-detail.png)
+
 The ingredient finder is the more distinctive feature and the one that makes Bubble different from a generic recipe site. It's an interactive map where members pin exactly where they found a specific ingredient in Sydney, down to the store and suburb. Each ingredient in a recipe links directly to those community sourced locations. So a kuih lapis recipe doesn't just tell you what you need but it helps you find where to actually get it. To keep that data trustworthy over time, members can confirm something is still in stock or flag that it's gone. It's a lightweight trust mechanic that avoids the need for ads or sponsored listings.
 
 There's also a questions board, a conversational space for things like "has anyone found fresh coconut cream in the Inner West?" which keeps the hub feeling active between recipe posts.
+
+![Wireframes for the ingredient map and post-a-recipe flow](assets/seabling-wireframe-map-post.png)
 
 Committing to the concept immediately raised some practical questions about scope. The ingredient map is the most technically ambitious part of the app, and it's also the feature that makes Bubble genuinely distinctive. That creates a tension because it's the thing most worth building, but also the thing most likely to cause problems.
 
