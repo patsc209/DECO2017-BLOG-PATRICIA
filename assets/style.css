@@ -234,6 +234,21 @@ body.page-post main {
   border-radius: var(--radius-card);
 }
 
+.page-post article p:has(> img:only-child) {
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.page-post article p:has(> img:only-child) img {
+  display: inline-block;
+  max-width: min(100%, 22rem);
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 24px rgba(44, 42, 38, 0.08);
+}
+
 a {
   color: #4a5a6e;
 }
