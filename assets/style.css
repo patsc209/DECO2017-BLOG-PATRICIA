@@ -171,6 +171,16 @@ body {
   display: block;
 }
 
+.post-card-thumb--contain-bottom {
+  background: #fff;
+  background-image: none;
+}
+
+.post-card-thumb--contain-bottom .post-card-thumb-img {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
 .post-card-footer {
   display: flex;
   align-items: flex-start;
@@ -282,9 +292,16 @@ span.author::before {
   color: var(--ink-muted);
 }
 
-p.summary {
-  margin: 0;
-  font-size: 0.9rem;
+.page-post p.summary {
+  margin: 0.5rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.page-post p.summary:empty {
+  display: none;
 }
 
 ul.tags-list {

@@ -3,7 +3,7 @@ title: Reflection
 date: 2026-06-03
 image: thumb-reflection.png
 author: Patricia
-summary: The final reflection on SEAblings — Lighthouse scores, user testing with real participants, what made it in, and what I'd fix first.
+summary: "The final reflection on SEAblings: Lighthouse scores, user testing with real participants, what made it in, and what I'd fix first."
 tags:
   - reflection
   - performance

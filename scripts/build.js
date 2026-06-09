@@ -58,6 +58,7 @@ for (const file of fs.readdirSync(POSTS_DIR)) {
   const page = applyTemplate(template, {
     title: data.title,
     date: format(new Date(data.date), "yyyy-MM-dd"),
+    summary: typeof data.summary === "string" ? data.summary : "",
     author: data.author ?? "",
     content: html,
     tags: tagsHtml,
@@ -85,11 +86,15 @@ const postsHtml = posts
         ? `<img class="post-card-thumb-img" src="assets/${p.image}" alt="" loading="lazy" decoding="async">`
         : "";
 
+    const thumbClass =
+      p.imageThumb === "contain-bottom" ? " post-card-thumb--contain-bottom" : "";
+
     return applyTemplate(postListItemTemplate, {
       slug: p.slug,
       title: p.title,
       date: format(new Date(p.date), "yyyy-MM-dd"),
       thumbImg,
+      thumbClass,
     });
   })
   .join("");
